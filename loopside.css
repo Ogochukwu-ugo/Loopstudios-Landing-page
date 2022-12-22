@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+  }
+
 .navbar-toggler {
     width: 15px;
     height: 15px;
@@ -22,10 +26,6 @@
     border: 0;
 }
 
-/* .navbar-toggler span {
-    margin: 0;
-    padding: 0;
-} */
 
 .menu {
     padding-left: 20px;
@@ -41,6 +41,7 @@
 }
 
 .nav-link {
+    position: relative;
     color: hsl(0, 0%, 100%) !important;
     font-family: Josefin Sans;
     font-size: 1.2rem;
@@ -49,9 +50,10 @@
 }
 
 
-.nav-link[aria-current="page"] {
-    text-decoration: underline solid hsl(0, 0%, 100%) 0.12rem !important;
-    text-underline-offset: 0.5rem;
+.nav-link[aria-current="page"],
+.nav-item:hover{
+    text-decoration: underline solid hsl(0, 0%, 100%) 0.2rem !important;
+    text-underline-offset: 0.6rem;
 }
 
 .toggler-icon {
@@ -108,6 +110,7 @@
 
 #navbar-content {
     margin-top: 50px;
+    text-align: right;
 }
 
 .attribution { 
@@ -122,50 +125,253 @@
 }
 
 .header {
-    position: relative;
     background-image: url('./loopstudios-landing-conent/images/mobile/image-hero.jpg');
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     height: 100vh;
 }
 
 .header-content {
     position: absolute;
-    top: 50%;
-    /* left: 50%;
-    transform: translate(-50%, -50%); */
-    margin: auto .8rem;
-    margin-top: -.8rem;
+    top: 35%;
+    margin: auto 1rem;
     background: transparent;
     border: 2px solid hsl(0, 0%, 100%);
 }
 
 .header-info {
     text-transform: uppercase;
-    /* width:70%; */
-    margin: auto;
-    padding: .8rem;
+    padding: 1.8rem;
     color: hsl(0, 0%, 100%);
     font-family: Josefin Sans;
-    font-size: 2.9rem;
+    font-size: 2rem;
     font-weight: 300;
     text-align: left;
 }
 
-.main-footer {
-    background-color: hsl(0, 0%, 0%);
+.interactive {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.interactive-section {
+    padding: .8rem;
+}
+
+picture,
+.interactive-image {
+    display: block;
+    width: 100%;
+}
+
+picture > img,
+.interactive-image> img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.interactive-contents {
+    padding: 1.8rem;
+}
+
+.interactive-heading {
+    text-transform: uppercase;
+    font-family: Josefin Sans;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    color: hsl(0, 0%, 41%);
+}
+
+.interactive-text{
+    font-family: Josefin Sans;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    color: hsl(0, 0%, 55%);
+}
+
+.creations-section {
+    padding: .8rem;
+    text-align: center;
+}
+
+.creations-heading {
+    text-transform: uppercase;
+    font-family: Josefin Sans;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 41%);
+}
+
+.creations-images {
+    display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto;
+    }
+
+.upper-images,
+.lower-images {
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: column;
+    margin: auto;
+}
+
+.deep-earth {
+    background: url(/loopstudios-landing-conent/images/mobile/image-deep-earth.jpg) scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.night-arcade {
+    background: url(/loopstudios-landing-conent/images/mobile/image-night-arcade.jpg) scroll; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    margin-top: 1.5rem;
+}
+
+.soccer-team {
+    background: url(/loopstudios-landing-conent/images/mobile/image-soccer-team.jpg) scroll;
+    margin-top: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.the-grid {
+    background: url(/loopstudios-landing-conent/images/mobile/image-grid.jpg) scroll;
+    margin-top: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.pocket-borealis {
+    background: url(/loopstudios-landing-conent/images/mobile/image-pocket-borealis.jpg) scroll;
+    margin-top: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.up-above {
+    background: url(/loopstudios-landing-conent/images/mobile/image-from-above.jpg) scroll;
+    margin-top: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.the-curiosity {
+    background: url(/loopstudios-landing-conent/images/mobile/image-curiosity.jpg) scroll;
+    margin-top: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.make-fisheye {
+    background: url(/loopstudios-landing-conent/images/mobile/image-fisheye.jpg) scroll;
+    margin-top: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.night-arcade-text, .pocket-borealis-text,
+.soccer-team-text, .the-curiosity-text, .deep-earth-text,
+.the-grid-text, .make-fisheye-text, .up-above-text {
+    text-transform: uppercase;
+    text-align: left;
+    font-family: Josefin Sans;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    color: hsl(0, 0%, 90%);
+}
+
+.section-btn {
+    position: absolute;
+    margin-top: 1.3rem;
+    width: 40%;
+    left: 30%;
+    font-family: Alata;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 41%);
+    outline: 1px solid hsl(0, 0%, 41%);
+    border-radius: 2px;
 }
 
 
-@media only screen and (min-width: 1024px) {
-    .menu {
-        padding-left: 10rem;
-        padding-right: 10rem;
-    }
+.main-footer {
+    margin-top: 8rem;
+    text-align: center;
+    padding: .4rem;
+    background-color: hsl(0, 0%, 0%);
+}
 
-    .nav-link,
-    .nav-link:active,
-    .nav-link:focus {
+.footer-navbar {
+    margin: auto ;
+    text-align: center;
+}
+
+.footer-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto ;
+    text-align: center;
+}
+
+.footer-nav-links li {
+    margin: .4rem;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%) !important;
+    font-family: Josefin Sans;
+    font-size: 0.8rem;
+    text-align: left;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.social-icons img {
+    height: 1.2rem;
+    margin: .3rem;
+}
+
+.copyright span {
+    color: hsl(0, 0%, 55%);
+    font-family: Alata;
+    font-size: 0.8rem;
+}
+
+
+@media only screen and (min-width: 375px) {
+    .header-info {
+        text-transform: uppercase;
+        padding: 1.8rem;
+        width: 40%;
+        color: hsl(0, 0%, 100%);
+        font-family: Josefin Sans;
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: left;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .nav-link {
         color: hsl(0, 0%, 100%) !important;
         font-family: Alata;
         font-size: 0.9rem;
@@ -181,28 +387,285 @@
     }
 
     .header {
-        position: relative;
-        background-image: url('./loopstudios-landing-conent/images/desktop/image-hero.jpg');
-        background-attachment: fixed;
+        background-image: url('./loopstudios-landing-conent/images/desktop/image-hero.jpg') no-repeat;
+        background-attachment: scroll;
         background-size: cover;
-        /* height: rem; */
+        height: 100vh;
     }
 
     .header-content {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-78%, -20%);
-        /* margin: auto .8rem;
-        margin-top: -.8rem; */
+        width: 50%;
+        top: 55%;
+        left: 35%;
+        transform: translate(-65%, -45%);
         background: transparent;
         border: 2px solid hsl(0, 0%, 100%);
     }
 
     .header-info {
         text-transform: uppercase;
-        /* width:70%; */
         margin: auto;
+        width: 100%;
+        padding: 2rem;
+        color: hsl(0, 0%, 100%);
+        font-family: Josefin Sans;
+        font-size: 2.6rem;
+        font-weight: 300;
+        text-align: left;
+    } 
+
+    .interactive {
+        padding: 1.2rem;
+    }
+
+    .interactive-image {
+        width: 60%;
+    }
+
+    .interactive-heading {
+        text-align: left;
+        font-size: 2.2rem;
+    }
+
+    .interactive-contents {
+        position: absolute;
+        width: 50%;
+        left: 46%;
+        margin-top: 6rem;
+        padding: 2rem;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .interactive-text {
+        text-align: left;
+    }
+
+    .creations-section {
+        position: relative;
+        padding: .8rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .creations-heading {
+        margin-left: 3rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .creations-images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto;
+        padding: 0 2rem;
+    }
+
+    .upper-images,
+    .lower-images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .deep-earth {
+        background: url(/loopstudios-landing-conent/images/desktop/image-deep-earth.jpg) scroll no-repeat;
+        background-size: cover;
+        width: 22%;
+        height: 24rem;
+        margin-right: 1.4rem;
+        margin-left: .3rem;
+    }
+    
+    .night-arcade {
+        background: url(/loopstudios-landing-conent/images/desktop/image-night-arcade.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 22%;
+        height: 24rem;
+        margin-right: 1.4rem;
+    }
+    
+    .soccer-team {
+        background: url(/loopstudios-landing-conent/images/desktop/image-soccer-team.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 22%;
+        height: 24rem;
+        margin-right: 1.4rem;
+    }
+    
+    .the-grid {
+        background: url(/loopstudios-landing-conent/images/desktop/image-grid.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 22%;
+        height: 24rem;
+    }
+    
+    .pocket-borealis {
+        background: url(/loopstudios-landing-conent/images/desktop/image-pocket-borealis.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 22%;
+        height: 24rem;
+        margin-right: 1.4rem;
+    }
+    
+    .up-above {
+        background: url(/loopstudios-landing-conent/images/desktop/image-from-above.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 22%;
+        height: 24rem;
+        margin-right: 1.4rem;
+        margin-left: .2rem;
+    }
+    
+    .the-curiosity {
+        background: url(/loopstudios-landing-conent/images/desktop/image-curiosity.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 22%;
+        height: 24rem;
+        margin-right: 1.4rem;
+    }
+    
+    .make-fisheye {
+        background: url(/loopstudios-landing-conent/images/desktop/image-fisheye.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 22%;
+        height: 24rem;
+    }
+
+    .night-arcade-text, .pocket-borealis-text,
+.soccer-team-text, .the-curiosity-text, .deep-earth-text,
+.the-grid-text, .make-fisheye-text, .up-above-text {
+    text-transform: uppercase;
+    text-align: left;
+    font-family: Josefin Sans;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    margin-top: 20rem;
+    margin-left: 1.3rem;
+    color: hsl(0, 0%, 90%);
+}
+
+    .section-btn {
+        position: absolute;
+        margin-top: 0;
+        width: 12%;
+        top: 4%;
+        left: 80%;
+        font-family: Alata;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 41%);
+        outline: 1px solid hsl(0, 0%, 41%);
+        border-radius: 2px;
+    }
+
+
+    .main-footer {
+        margin-top: 4rem;
+        text-align: center;
+        padding: .4rem;
+        background-color: hsl(0, 0%, 0%);
+    }
+    
+    .footer-nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto ;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 80%;
+        text-align: left;
+        margin: auto 3.2rem;
+        margin-top: .6rem;
+    }
+
+
+    .social-icons {
+        width: 80%;
+        text-align: right;
+        margin: auto 1rem;
+        margin-top:  .8rem;
+    }
+
+    .copyright {
+        margin-top: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .logo {
+        width: 80%;
+        text-align: left;
+        margin: auto 7rem;
+        margin-top: .6rem;
+    }
+
+
+    .social-icons {
+        width: 80%;
+        text-align: right;
+        margin: auto -2rem;
+        margin-top:  .6rem;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .menu {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .nav-link {
+        color: hsl(0, 0%, 100%) !important;
+        font-family: Alata;
+        font-size: 0.9rem;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+    /* .nav-link.active, */
+    
+
+    #navbar-content {
+        margin-top: 0;
+    }
+
+    .header {
+        background-image: url('./loopstudios-landing-conent/images/desktop/image-hero.jpg') no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .header-content {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-86%, -12%);
+        background: transparent;
+        border: 2px solid hsl(0, 0%, 100%);
+    }
+
+    .header-info {
+        text-transform: uppercase;
+        margin: auto;
+        width: 100%;
         padding: 2rem;
         color: hsl(0, 0%, 100%);
         font-family: Josefin Sans;
@@ -210,4 +673,221 @@
         font-weight: 300;
         text-align: left;
     } 
+
+    .interactive {
+        padding: 1.2rem;
+    }
+
+    .interactive-image {
+        width: 60%;
+    }
+
+    .interactive-heading {
+        text-align: left;
+        font-size: 2.2rem;
+    }
+
+    .interactive-contents {
+        position: absolute;
+        width: 40%;
+        left: 46%;
+        margin-top: 9rem;
+        padding: 4rem;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .interactive-text {
+        text-align: left;
+    }
+
+    .creations-section {
+        position: relative;
+        padding: auto 2rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .creations-heading {
+        margin-left: 4rem;
+        margin-top: 2rem;
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    .creations-images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto;
+        padding:  0 3rem 0 3rem;
+    }
+
+    .upper-images,
+    .lower-images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 1.4rem;
+    }
+
+    .deep-earth {
+        background: url(/loopstudios-landing-conent/images/desktop/image-deep-earth.jpg) scroll no-repeat;
+        background-size: cover;
+        width: 23%;
+        height: 28rem;
+        margin-right: 1.4rem;
+        margin-left: .3rem;
+    }
+    
+    .night-arcade {
+        background: url(/loopstudios-landing-conent/images/desktop/image-night-arcade.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 23%;
+        height: 28rem;
+        margin-right: 1.4rem;
+    }
+    
+    .soccer-team {
+        background: url(/loopstudios-landing-conent/images/desktop/image-soccer-team.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 23%;
+        height: 28rem;
+        margin-right: 1.4rem;
+    }
+    
+    .the-grid {
+        background: url(/loopstudios-landing-conent/images/desktop/image-grid.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 23%;
+        height: 28rem;
+    }
+    
+    .pocket-borealis {
+        background: url(/loopstudios-landing-conent/images/desktop/image-pocket-borealis.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 23%;
+        height: 28rem;
+        margin-right: 1.4rem;
+    }
+    
+    .up-above {
+        background: url(/loopstudios-landing-conent/images/desktop/image-from-above.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 23%;
+        height: 28rem;
+        margin-right: 1.4rem;
+        margin-left: .2rem;
+    }
+    
+    .the-curiosity {
+        background: url(/loopstudios-landing-conent/images/desktop/image-curiosity.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 23%;
+        height: 28rem;
+        margin-right: 1.4rem;
+    }
+    
+    .make-fisheye {
+        background: url(/loopstudios-landing-conent/images/desktop/image-fisheye.jpg) scroll no-repeat;
+        margin-top: 0;
+        background-size: cover;
+        width: 23%;
+        height: 28rem;
+    }
+
+    .night-arcade-text, .pocket-borealis-text,
+.soccer-team-text, .the-curiosity-text, .deep-earth-text,
+.the-grid-text, .make-fisheye-text, .up-above-text {
+    text-transform: uppercase;
+    text-align: left;
+    font-family: Josefin Sans;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    margin-top: 23rem;
+    margin-left: 2rem;
+    color: hsl(0, 0%, 90%);
+}
+
+    .section-btn {
+        position: absolute;
+        margin-top: 0;
+        width: 12%;
+        top: 4%;
+        left: 80%;
+        font-family: Alata;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 41%);
+        outline: 1px solid hsl(0, 0%, 41%);
+        border-radius: 2px;
+    }
+
+
+    .main-footer {
+        margin-top: 5rem;
+        text-align: center;
+        padding: .4rem;
+        background-color: hsl(0, 0%, 0%);
+    }
+    
+    .footer-nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto ;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 80%;
+        text-align: left;
+        margin: auto 11.2rem;
+        margin-top: .6rem;
+    }
+
+
+    .social-icons {
+        width: 80%;
+        text-align: right;
+        margin: auto -4.2rem;
+        margin-top:  .6rem;
+    }
+
+    .copyright {
+        margin-top: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .interactive-contents {
+        position: absolute;
+        width: 35%;
+        left: 46%;
+        margin-top: 11rem;
+        padding: 4rem;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .logo {
+        width: 80%;
+        text-align: left;
+        margin: auto 13.5rem;
+        margin-top: .6rem;
+    }
+
+
+    .social-icons {
+        width: 80%;
+        text-align: right;
+        margin: auto -6rem;
+        margin-top:  .6rem;
+    }
 }
