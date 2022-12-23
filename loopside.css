@@ -56,6 +56,10 @@ html, body {
     text-underline-offset: 0.6rem;
 }
 
+.nav-links {
+    margin-top: 5rem;
+}
+
 .toggler-icon {
     display: block;
     position: absolute;
@@ -108,9 +112,13 @@ html, body {
     transform:  rotate(0deg);
 }
 
+.offcanvas {
+    margin-top: 0rem !important;
+    background-color: hsl(0, 0%, 0%);
+}
+
 #navbar-content {
     margin-top: 50px;
-    text-align: right;
 }
 
 .attribution { 
@@ -381,6 +389,9 @@ picture > img,
 
     /* .nav-link.active, */
     
+    .nav-links {
+        margin-top: 0;
+    }
 
     #navbar-content {
         margin-top: 0;
@@ -795,7 +806,9 @@ picture > img,
     }
     
     .make-fisheye {
+
         background: url("./loopstudios-landing-conent/images/desktop/image-fisheye.jpg") scroll no-repeat;
+
         margin-top: 0;
         background-size: cover;
         width: 23%;

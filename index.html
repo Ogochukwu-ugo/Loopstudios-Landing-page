@@ -16,29 +16,38 @@
     <nav  class="navbar menu navbar-expand-md fixed-top mt-4" role="navigation">
         <div class="container-fluid ">
           <a class="navbar-brand" href="#">loopstudios</a>
-          <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler collapsed " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content" aria-controls="navbar-content">
             <span class="toggler-icon top-bar"></span>
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
-            <ul role="menu"  class="nav navbar-nav nav-links">
-              <li role="menuitem" class="nav-item">
-                <a role="link" class="nav-link "  href="index.html">About</a>
-              </li>
-              <li role="menuitem" class="nav-item">
-                <a role="link" class="nav-link "  href="#"> Careers</a>
-              </li>
-              <li role="menuitem" class="nav-item">
-                <a role="link" class="nav-link "  href="#">  Events</a>
-              </li>
-              <li role="menuitem" class="nav-item">
-                <a role="link" class="nav-link " href="#">Products</a>
-              </li>
-              <li role="menuitem" class="nav-item">
-                <a role="link" class="nav-link " href="support.html">Support</a>
-              </li>
-            </ul>
+
+          <div class="offcanvas offcanvas-end "  tabindex="-1" id="navbar-content" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">loopstudios</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body justify-content-end">
+              <ul role="menu"  class="nav navbar-nav nav-links">
+                <li role="menuitem" class="nav-item">
+                  <a role="link" class="nav-link "  href="index.html">About</a>
+                </li>
+                <li role="menuitem" class="nav-item">
+                  <a role="link" class="nav-link "  href="#"> Careers</a>
+                </li>
+                <li role="menuitem" class="nav-item">
+                  <a role="link" class="nav-link "  href="#">  Events</a>
+                </li>
+                <li role="menuitem" class="nav-item">
+                  <a role="link" class="nav-link " href="#">Products</a>
+                </li>
+                <li role="menuitem" class="nav-item">
+                  <a role="link" class="nav-link " href="support.html">Support</a>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </nav>
