@@ -56,6 +56,10 @@ html, body {
     text-underline-offset: 0.6rem;
 }
 
+.nav-links {
+    margin-top: 5rem;
+}
+
 .toggler-icon {
     display: block;
     position: absolute;
@@ -108,9 +112,13 @@ html, body {
     transform:  rotate(0deg);
 }
 
+.offcanvas {
+    margin-top: 0rem !important;
+    background-color: hsl(0, 0%, 0%);
+}
+
 #navbar-content {
     margin-top: 50px;
-    text-align: right;
 }
 
 .attribution { 
@@ -220,14 +228,14 @@ picture > img,
 }
 
 .deep-earth {
-    background: url(/loopstudios-landing-conent/images/mobile/image-deep-earth.jpg) scroll;
+    background: url("./loopstudios-landing-conent/images/mobile/image-deep-earth.jpg") scroll;
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
 }
 
 .night-arcade {
-    background: url(/loopstudios-landing-conent/images/mobile/image-night-arcade.jpg) scroll; 
+    background: url("./loopstudios-landing-conent/images/mobile/image-night-arcade.jpg") scroll; 
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -235,7 +243,7 @@ picture > img,
 }
 
 .soccer-team {
-    background: url(/loopstudios-landing-conent/images/mobile/image-soccer-team.jpg) scroll;
+    background: url("./loopstudios-landing-conent/images/mobile/image-soccer-team.jpg") scroll;
     margin-top: 1.5rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -243,7 +251,7 @@ picture > img,
 }
 
 .the-grid {
-    background: url(/loopstudios-landing-conent/images/mobile/image-grid.jpg) scroll;
+    background: url("./loopstudios-landing-conent/images/mobile/image-grid.jpg") scroll;
     margin-top: 1.5rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -251,7 +259,7 @@ picture > img,
 }
 
 .pocket-borealis {
-    background: url(/loopstudios-landing-conent/images/mobile/image-pocket-borealis.jpg) scroll;
+    background: url("./loopstudios-landing-conent/images/mobile/image-pocket-borealis.jpg") scroll;
     margin-top: 1.5rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,7 +267,7 @@ picture > img,
 }
 
 .up-above {
-    background: url(/loopstudios-landing-conent/images/mobile/image-from-above.jpg) scroll;
+    background: url("./loopstudios-landing-conent/images/mobile/image-from-above.jpg") scroll;
     margin-top: 1.5rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -267,7 +275,7 @@ picture > img,
 }
 
 .the-curiosity {
-    background: url(/loopstudios-landing-conent/images/mobile/image-curiosity.jpg) scroll;
+    background: url("./loopstudios-landing-conent/images/mobile/image-curiosity.jpg") scroll;
     margin-top: 1.5rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -275,7 +283,7 @@ picture > img,
 }
 
 .make-fisheye {
-    background: url(/loopstudios-landing-conent/images/mobile/image-fisheye.jpg) scroll;
+    background: url("./loopstudios-landing-conent/images/mobile/image-fisheye.jpg") scroll;
     margin-top: 1.5rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -381,6 +389,9 @@ picture > img,
 
     /* .nav-link.active, */
     
+    .nav-links {
+        margin-top: 0;
+    }
 
     #navbar-content {
         margin-top: 0;
@@ -473,7 +484,7 @@ picture > img,
     }
 
     .deep-earth {
-        background: url(/loopstudios-landing-conent/images/desktop/image-deep-earth.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-deep-earth.jpg") scroll no-repeat;
         background-size: cover;
         width: 22%;
         height: 24rem;
@@ -482,7 +493,7 @@ picture > img,
     }
     
     .night-arcade {
-        background: url(/loopstudios-landing-conent/images/desktop/image-night-arcade.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-night-arcade.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 22%;
@@ -491,7 +502,7 @@ picture > img,
     }
     
     .soccer-team {
-        background: url(/loopstudios-landing-conent/images/desktop/image-soccer-team.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-soccer-team.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 22%;
@@ -500,7 +511,7 @@ picture > img,
     }
     
     .the-grid {
-        background: url(/loopstudios-landing-conent/images/desktop/image-grid.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-grid.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 22%;
@@ -508,7 +519,7 @@ picture > img,
     }
     
     .pocket-borealis {
-        background: url(/loopstudios-landing-conent/images/desktop/image-pocket-borealis.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-pocket-borealis.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 22%;
@@ -517,7 +528,7 @@ picture > img,
     }
     
     .up-above {
-        background: url(/loopstudios-landing-conent/images/desktop/image-from-above.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-from-above.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 22%;
@@ -527,7 +538,7 @@ picture > img,
     }
     
     .the-curiosity {
-        background: url(/loopstudios-landing-conent/images/desktop/image-curiosity.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-curiosity.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 22%;
@@ -536,7 +547,7 @@ picture > img,
     }
     
     .make-fisheye {
-        background: url(/loopstudios-landing-conent/images/desktop/image-fisheye.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-fisheye.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 22%;
@@ -732,7 +743,7 @@ picture > img,
     }
 
     .deep-earth {
-        background: url(/loopstudios-landing-conent/images/desktop/image-deep-earth.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-deep-earth.jpg") scroll no-repeat;
         background-size: cover;
         width: 23%;
         height: 28rem;
@@ -741,7 +752,7 @@ picture > img,
     }
     
     .night-arcade {
-        background: url(/loopstudios-landing-conent/images/desktop/image-night-arcade.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-night-arcade.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 23%;
@@ -750,7 +761,7 @@ picture > img,
     }
     
     .soccer-team {
-        background: url(/loopstudios-landing-conent/images/desktop/image-soccer-team.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-soccer-team.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 23%;
@@ -759,7 +770,7 @@ picture > img,
     }
     
     .the-grid {
-        background: url(/loopstudios-landing-conent/images/desktop/image-grid.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-grid.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 23%;
@@ -767,7 +778,7 @@ picture > img,
     }
     
     .pocket-borealis {
-        background: url(/loopstudios-landing-conent/images/desktop/image-pocket-borealis.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-pocket-borealis.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 23%;
@@ -776,7 +787,7 @@ picture > img,
     }
     
     .up-above {
-        background: url(/loopstudios-landing-conent/images/desktop/image-from-above.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-from-above.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 23%;
@@ -786,7 +797,7 @@ picture > img,
     }
     
     .the-curiosity {
-        background: url(/loopstudios-landing-conent/images/desktop/image-curiosity.jpg) scroll no-repeat;
+        background: url("./loopstudios-landing-conent/images/desktop/image-curiosity.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 23%;
@@ -795,7 +806,7 @@ picture > img,
     }
     
     .make-fisheye {
-        background: url(/loopstudios-landing-conent/images/desktop/image-fisheye.jpg) scroll no-repeat;
+        background: url("../loopstudios-landing-conent/images/desktop/image-fisheye.jpg") scroll no-repeat;
         margin-top: 0;
         background-size: cover;
         width: 23%;

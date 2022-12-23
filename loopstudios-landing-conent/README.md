@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://ogochukwu-ugo.github.io/Loopstudios-Landing-page/index.html)
 
 ## My process
 I used VS Code editor in building the Loopstudios Landing page and Bootstrap 5 for some styling. 
