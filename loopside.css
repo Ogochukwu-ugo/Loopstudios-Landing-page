@@ -806,7 +806,9 @@ picture > img,
     }
     
     .make-fisheye {
-        background: url("../loopstudios-landing-conent/images/desktop/image-fisheye.jpg") scroll no-repeat;
+
+        background: url("./loopstudios-landing-conent/images/desktop/image-fisheye.jpg") scroll no-repeat;
+
         margin-top: 0;
         background-size: cover;
         width: 23%;
